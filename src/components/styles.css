@@ -232,3 +232,72 @@ body {
 .email-link:hover {
   font-weight: bold;
 }
+.skills-section, .profile-section {
+  text-align: center;
+  padding: 50px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.skills-section.light, .profile-section.light {
+  background: #f8f8f8;
+  color: #222;
+}
+
+.skills-section.dark, .profile-section.dark {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+}
+
+.basic-info,
+.about-me {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  min-width: 280px;
+  transition: transform 0.3s;
+}
+
+.dark .basic-info, .dark .about-me {
+  background: #333;
+  color: white;
+}
+
+.basic-info:hover,
+.about-me:hover {
+  transform: scale(1.05);
+}
