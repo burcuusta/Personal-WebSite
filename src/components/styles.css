@@ -96,15 +96,18 @@ body {
   transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
-.theme-toggle:hover {
-  background: #c2185b;
+.theme-toggle {
+  background: #e91e63;
+  color: white;
 }
 
-.lang-toggle:hover {
-  background: #0056b3;
+.light-header .theme-toggle {
+  background: #ff4081;
 }
 
+.dark-header .theme-toggle {
+  background: #ff4081;
+}
 /* Butonlara Animasyon */
 @keyframes fadeIn {
   from {
@@ -123,32 +126,33 @@ body {
 /* Hero Bölümü */
 .hero-section {
   display: flex;
+  flex-direction: row-reverse; 
   align-items: center;
   justify-content: center;
   text-align: left;
   gap: 40px;
   padding: 60px;
-  transition: transform 0.3s ease-in-out;
 }
 
 .hero-section:hover {
   transform: scale(1.02);
 }
 
-/* Profil Fotoğrafı */
+
 .profile-container {
-  flex-shrink: 0;
+  flex-shrink: 0; 
 }
 
+
 .profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #e91e63;
+  width: 220px; 
+  height: 300px; 
+  border-radius: 10px; 
+  object-fit: cover; 
+  border: 4px solid #e91e63; 
   box-shadow: 0px 4px 15px rgba(233, 30, 99, 0.5);
-  transition: transform 0.3s ease;
 }
+
 
 .profile-pic:hover {
   transform: rotate(5deg) scale(1.05);
@@ -300,4 +304,84 @@ body {
 .basic-info:hover,
 .about-me:hover {
   transform: scale(1.05);
+}
+.projects-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.tags {
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:nth-child(1) {
+  color: blue;
+}
+
+.footer-links a:nth-child(2) {
+  color: black;
+}
+
+.footer-links a:nth-child(3) {
+  color: #0077b5;
+}
+
+.footer-links a:nth-child(4) {
+  color: red;
 }

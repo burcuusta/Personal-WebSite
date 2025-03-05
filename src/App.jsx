@@ -5,7 +5,9 @@ import HeroSection from "./components/HeroSection";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 import "./components/styles.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <HeroSection />
         <Skills />
         <Profile />
+        <Projects />
+        <Footer />
       </div>
     </Provider>
   );

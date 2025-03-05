@@ -10,7 +10,7 @@ const Header = () => {
   const language = useSelector((state) => state.language.language);
 
   useEffect(() => {
-    document.body.className = darkMode ? "dark" : "light";
+    document.body.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
   return (
@@ -26,7 +26,8 @@ const Header = () => {
         <button
           onClick={() => dispatch(changeLanguage(language === "en" ? "tr" : "en"))}
           className="button lang-toggle"
-        >  {language === "en" ? "Türkçe'ye Geç" : "Switch to English"}
+        >
+          {language === "en" ? "Türkçe'ye Geç" : "Switch to English"}
         </button>
       </div>
     </header>
