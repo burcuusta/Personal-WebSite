@@ -26,11 +26,19 @@ const HeroSection = () => {
         <div className="social-links">
           <a href="https://github.com/burcuusta">🔗 {translations[language].github}</a>
           <p>{translations[language].expectation} </p>
+          <div className="freelance-info">
+          <p>
+            <strong>{translations[language].expectation1} </strong>
+            <span className="highlight">{translations[language].expectation2} </span> Project.
+          </p>
+          <p> {translations[language].invite}
+            </p>
           <a href="mailto:burcuusta93@gmail.com" className="email-link">
             {translations[language].email}
           </a>
         </div>
       </div>
+    </div>
     </section>
   );
 };

@@ -11,15 +11,15 @@ const Profile = () => {
       <div className="profile-container">
         <div className="basic-info">
           <h3 className="info-title">{translations[language].basicInfo}</h3>
-          <p><strong>{translations[language].birthDate}:</strong> 24.03.1996</p>
-          <p><strong>{translations[language].city}:</strong> Ankara</p>
-          <p><strong>{translations[language].education}:</strong> Hacettepe Üniversitesi, 2016</p>
+          <p><strong>{translations[language].birthDate}:</strong> 17.05.1993</p>
+          <p><strong>{translations[language].city}:</strong> İzmir</p>
+          <p><strong>{translations[language].education}:</strong> Bilkent, 2018</p>
           <p><strong>{translations[language].role}:</strong> Frontend, UI</p>
         </div>
         <div className="about-me">
           <h3>{translations[language].aboutMe}</h3>
           <p>
-            
+          {translations[language].aboutMeDesc}
           </p>
           <p>
             

@@ -1,25 +1,25 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import user from "../assets/user.png";
+import book from "../assets/book.jpg";
 
 const projects = [
   {
     id: 1,
-    titleKey: "randomJokesTitle",
-    descKey: "randomJokesDesc",
+    titleKey: "myBankAccount",
     tags: ["react", "vercel", "axios", "router"],
     github: "#",
     app: "#",
-    imgSrc: "https://via.placeholder.com/300x200",
+    imgSrc: `${user}`,
     bgColor: "#D8EAFE",
   },
   {
     id: 2,
-    titleKey: "boredTitle",
-    descKey: "boredDesc",
+    titleKey: "DOM-Quotes",
     tags: ["react", "redux", "axios", "router", "vercel"],
     github: "#",
     app: "#",
-    imgSrc: "https://via.placeholder.com/300x200",
+    imgSrc: `${book}`,
     bgColor: "#D4F4E8",
   },
 ];
@@ -37,8 +37,7 @@ const Projects = () => {
             className="project-card"
             style={{ backgroundColor: project.bgColor }}
           >
-            <h3>{translations[language][project.titleKey]}</h3>
-            <p>{translations[language][project.descKey]}</p>
+            <h3>{project.titleKey}</h3>
             <div className="tags">
               {project.tags.map((tag, index) => (
                 <span key={index} className="tag">
